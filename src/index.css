@@ -88,10 +88,28 @@ img {
   font-size: 30px;
   cursor: pointer;
 }
+
 .profile-info p {
   margin-bottom: 0;
 }
+
 .profile:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 12px rgba(166, 168, 171, 1);
+}
+@media screen and (max-width: 1024px) {
+  .profiles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .profiles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .profiles {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
